@@ -83,7 +83,9 @@
       <section id="table-clustering" class="mt-5 d-none">
         <div class="d-flex align-items-center justify-content-between">
           <div>
-            <h5 class="text-dark text-capitalize">tabel hasil clustering</h5>
+            <h5 class="text-dark text-capitalize">
+              tabel hasil clustering - Pengujian ke- {{ best_index + 1 }}
+            </h5>
             <p class="text-secondary" style="font-size: 14px">
               tabel ini menampilkan informasi tentang jenis ikan dan pendapatan
               per daerah, <br />
@@ -173,7 +175,8 @@
           </div>
 
           <div>
-            <canvas id="costChart" class="chart-large"></canvas>
+            <canvas id="costChart" class="chart-large mt-3"></canvas>
+            <canvas id="iterationsChart" class="chart-large mt-3"></canvas>
           </div>
         </div>
       </section>
@@ -241,16 +244,13 @@
 
         const iterations = {{ iterations | tojson }};
         new Chart(document.getElementById("iterationsChart"), {
-          type: 'line',
+          type: 'bar',
           data: {
             labels: iterations.map((_, i) => `Pengujian ${i + 1}`),
             datasets: [{
               label: 'Jumlah Iterasi K-Medoids Internal',
               data: iterations,
-              fill: false,
-              borderColor: '#ff6384',
-              tension: 0.3,
-              pointBackgroundColor: '#ff6384'
+              backgroundColor: '#ff6384',
             }]
           },
           options: {
@@ -259,6 +259,8 @@
             }
           }
         });
+
+
       };
     </script>
 
