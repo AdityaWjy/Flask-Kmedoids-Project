@@ -43,3 +43,5 @@ Aplikasi ini melakukan analisis dan klasterisasi terhadap dataset hasil _Produks
 7. http://127.0.0.1:5000/ # tergantung diterminal munculnya apa
 
 8. Clone repositori (atau simpan file `main.py` dan template-nya)
+
+Create
