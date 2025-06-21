@@ -14,26 +14,32 @@ Aplikasi ini melakukan analisis dan klasterisasi terhadap dataset hasil _Produks
 
 ## 🛠️ Cara Instalasi
 
-1. Clone repositori (atau simpan file `main.py` dan template-nya)
+# Masuk ke direktori project:
 
-```bash
-git clone https://github.com/AdityaWjy/Flask-Kmedoids-Project
-cd Flask-Kmedoids-Project
+1. cd SPK_FLASK
 
-# Buat dan aktifkan virtual environment
-python -m venv venv
-source venv/bin/activate        # untuk Linux/macOS
-venv\Scripts\activate           # untuk Windows
+# python -m venv venv
 
-# Install dependensi
-pip install flask pandas numpy scikit-learn matplotlib openpyxl
+2. python -m venv venv
 
-# Jalankan project
-cd SPK_FLASK
-cd src
-python main.py
-http://localhost:5000
+# Aktifkan virtual environment:
 
+# Windows:
 
+3. venv\Scripts\activate
 
-```
+# Macos
+
+3. source venv/bin/activate
+
+# Install Dependensi
+
+4. pip install flask pandas numpy scikit-learn matplotlib openpyxl
+
+# Jalankan aplikasi
+
+5. cd src
+6. python main.py
+7. http://127.0.0.1:5000/ # tergantung diterminal munculnya apa
+
+8. Clone repositori (atau simpan file `main.py` dan template-nya)
